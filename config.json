@@ -1,0 +1,56 @@
+{
+	"network-config": {
+		"org1": {
+			"name": "DebutInfotechPvtLtd",
+			"mspid": "DebutMSP",
+			"peer1": {
+				"requests": "grpcs://127.0.0.1:81",
+				"events": "grpcs://127.0.0.1:82",
+				"server-hostname": "peer0.debut.com",
+				"tls_cacerts": "/home/lovepreet/fabric-samples/Hyperledger-Fabric-Custom-Configuration/crypto-config/peerOrganizations/debut.com/peers/peer0.debut.com/tls/ca.crt"
+			},
+			"peer2": {
+				"requests": "grpcs://127.0.0.1:83",
+				"events": "grpcs://127.0.0.1:84",
+				"server-hostname": "peer1.debut.com",
+				"tls_cacerts": "/home/lovepreet/fabric-samples/Hyperledger-Fabric-Custom-Configuration/crypto-config/peerOrganizations/debut.com/peers/peer1.debut.com/tls/ca.crt"
+			},
+			"admin": {
+				"key": "/home/lovepreet/fabric-samples/Hyperledger-Fabric-Custom-Configuration/crypto-config/peerOrganizations/debut.com/users/Admin@debut.com/msp/keystore",
+				"cert": "/home/lovepreet/fabric-samples/Hyperledger-Fabric-Custom-Configuration/crypto-config/peerOrganizations/debut.com/users/Admin@debut.com/msp/signcerts"
+			}
+		},
+		"org2": {
+			"name": "AxisBankPvtLtd",
+			"mspid": "AxisMSP",
+			"peer1": {
+				"requests": "grpcs://127.0.0.1:85",
+				"events": "grpcs://127.0.0.1:86",
+				"server-hostname": "peer0.axisbank.com",
+				"tls_cacerts": "/home/lovepreet/fabric-samples/Hyperledger-Fabric-Custom-Configuration/crypto-config/peerOrganizations/axisbank.com/peers/peer0.axisbank.com/tls/ca.crt"
+			},
+			"peer2": {
+				"requests": "grpcs://127.0.0.1:87",
+				"events": "grpcs://127.0.0.1:88",
+				"server-hostname": "peer1.axisbank.com",
+				"tls_cacerts": "/home/lovepreet/fabric-samples/Hyperledger-Fabric-Custom-Configuration/crypto-config/peerOrganizations/axisbank.com/peers/peer1.axisbank.com/tls/ca.crt"
+			},
+			"admin": {
+				"key": "/home/lovepreet/fabric-samples/Hyperledger-Fabric-Custom-Configuration/crypto-config/peerOrganizations/axisbank.com/users/Admin@axisbank.com/msp/keystore",
+				"cert": "/home/lovepreet/fabric-samples/Hyperledger-Fabric-Custom-Configuration/crypto-config/peerOrganizations/axisbank.com/users/Admin@axisbank.com/msp/signcerts"
+			}
+		}
+	},
+	"host": "localhost",
+	"port": "8081",
+	"channel": "channel1",
+	"keyValueStore": "/tmp/fabric-client-kvs",
+	"eventWaitTime": "30000",
+	"pg": {
+		"host": "127.0.0.1",
+		"port": "5432",
+		"database": "fabricexplorer",
+		"username": "hppoc",
+		"passwd": "password"
+	}
+}
